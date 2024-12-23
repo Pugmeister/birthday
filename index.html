@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днём Рождения, Любимая!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <h1>С Днём Рождения, Любимая!</h1>
+            <p>Ты наполняешь этот мир светом и теплом. Пусть каждый день будет таким же ярким, как сегодня! 💖</p>
+            <button class="button" onclick="showSurprise()">Сюрприз 🎁</button>
+            <div class="surprise" id="surprise">
+                <img src="birthday-cake.jpg" alt="Торт с днём рождения">
+                <p>Я люблю тебя! 💕</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSurprise() {
+            const surprise = document.getElementById('surprise');
+            surprise.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
